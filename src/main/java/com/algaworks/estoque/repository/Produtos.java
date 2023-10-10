@@ -12,7 +12,7 @@ public interface Produtos extends JpaRepository<Produto, Long> {
 	
     Produto findByNome(String nome);
 	
-    // Equivalente ao like, mas não precisamo nos preocupar com o sinal de percentual. 
+    // Equivalente ao like, mas não precisamos nos preocupar com o sinal de percentual. 
     // Podemos usar também EndingWith, Containing.
     List<Produto> findByNomeStartingWith(String nome);
 	
